@@ -1,16 +1,15 @@
 #namaste react
 
-
 class Component
 
 Mounting
 
 constructor(dummy)
 Render(dummy)
-    <HTML Dummy>
+<HTML Dummy>
 Component Did mount
-    <API Call>
-    <this.setState> -- state variable is updated
+<API Call>
+<this.setState> -- state variable is updated
 
 UPDATE
 
@@ -19,6 +18,6 @@ UPDATE
     component Did Update
 
 UNMOUNT
-when we leave the page Component Will Mount will happen 
+when we leave the page Component Will Mount will happen
 
-
+https://live-interview-tasks.vercel.app/tasks/one
