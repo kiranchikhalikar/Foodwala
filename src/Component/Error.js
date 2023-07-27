@@ -1,12 +1,12 @@
 import { useRouteError } from "react-router-dom";
+import error_img from "../img/error__404.jpg"
 
 const Error = () => {
     const err = useRouteError();
+    const newLocal = "./";
     return(
         <div>
-            <h1>Oops!!!</h1>
-            <h2>Something went wrong!!</h2>
-            <h3>{err.status}:{err.statusText}</h3>
+            <img className="w-screen h-screen" src={error_img} alt="error" />
         </div>
     )
 }

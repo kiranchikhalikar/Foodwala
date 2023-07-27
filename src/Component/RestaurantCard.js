@@ -14,7 +14,7 @@ const RestaurantCard = (props) => {
     deliveryTime,
   } = resData?.data;
   return (
-    <div className="m-4 p-4 w-[305px] rounded-lg bg-gray-100 hover:bg-gray-200">
+    <div className="m-4 p-4 w-[305px] rounded-lg bg-gray-100 hover:bg-gray-200 overflow-auto">
       <img
         className="rounded-lg"
         src={CDN_URL + cloudinaryImageId}
@@ -22,11 +22,11 @@ const RestaurantCard = (props) => {
       />
       <h3 className="font-bold py-2 text-lg">{name}</h3>
       <h5>{cuisines.join(", ")}</h5>
-      <div className="sub_res-card">
-        <h4>{avgRating}</h4>
+      <div className="flex justify-between">
+        <h4 className="bg-green-600 px-2">{avgRating}</h4>
         <h4>{deliveryTime} minutes</h4>
         <h4>₹ {costForTwo / 100} FOR TWO</h4>
-        <h4>User : {loggedInUser}</h4>
+        {/* <h4>User : {loggedInUser}</h4> */}
       </div>
     </div>
   );
